@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ham-menu</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+
+<body>
+    <main id="Home">
+        <header class="desktop">
+            <div>
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+            </div>
+
+        </header>
+        <span class="ham">||||</span>
+
+        <nav class="mobile toggle">
+            <section>
+                <div>
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <div>
+                    <span class="close">❌</span>
+                </div>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Project</li>
+                    <li>Contact</li>
+                </ul>
+            </section>
+
+            <div>
+
+        </nav>
+        <div>
+            <h1>SCROLL PROJECT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos neque sunt in? Id, necessitatibus quos
+                quisquam distinctio laudantium fugiat?</p>
+            <button>EXPLORS TOURS</button>
+        </div>
+        <!--       
+        <section><h2 id="about">ABOUT</h2></section>
+        <section><h2 id="Project">Project</h2></section>
+        <section><h2 id="contact">Contact</h2></section> -->
+    </main>
+    <script>
+        document.getElementsByClassName('ham')[0].addEventListener('click', () => {
+            document.querySelector('.mobile').classList.toggle('toggle');
+
+        })
+        document.getElementsByClassName('close')[0].addEventListener('click', () => {
+            document.querySelector('.mobile').classList.toggle('toggle');
+
+        })
+    </script>
+</body>
+
+</html>
